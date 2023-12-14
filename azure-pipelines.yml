@@ -33,6 +33,6 @@ stages:
       - bash: ls -R $(Build.ArtifactStagingDirectory)    
       - task: PublishBuildArtifacts@1
         inputs:
-          PathtoPublish: '''$(Build.ArtifactStagingDirectory)'''
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)'
           ArtifactName: 'drop'
           publishLocation: 'Container'
